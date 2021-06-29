@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<form action="/products/<%= product.id %>/update-form" method="post">
+    <label for="name">Product Name:</label><br>
+    <input type="text" id="name" name="name" value="<%= product.name %>"><br>
+    <label for="description">Product Description:</label><br>
+    <input type="text" id="description" name="description" value="<%= product.description %>"> <br>
+    <label for="image_url">Product Image URL:</label><br>
+    <input type="text" id="image_url" name="image_url"  value="<%= product.image_url %>" value="https://via.placeholder.com/150"><br>
+    <label for="price">Product price:</label><br>
+    <input type="number" id="price" name="price"  value="<%= product.price %>">
+    <input type="submit" value="Create">
+</form>
+
+</html>

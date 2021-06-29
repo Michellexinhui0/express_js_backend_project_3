@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<form action="/manufacturers/<%= manufacturer.id %>/update-form" method="post">
+    <label for="name">Manufacturer Id:</label><br>
+    <input type="text" id="id" name="id" value="<%= manufacturer.id %>"><br>
+    <label for="description">Manufacturer name:</label><br>
+    <input type="text" id="name" name="name" value="<%= manufacturer.name %>"><br>
+    <label for="image_url">Manufacturer Image URL:</label><br>
+    <input type="text" id="image_url" name="image_url" value="<%= manufacturer.image_url %>" value="https://via.placeholder.com/150"><br>
+    <input type="submit" value="Create">
+</form>
+
+</html>
